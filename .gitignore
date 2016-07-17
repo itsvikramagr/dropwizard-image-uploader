@@ -1,4 +1,4 @@
 log/*
 logs/*
 bin/*
-target/*.jar
+target/*
