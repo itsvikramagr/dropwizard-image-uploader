@@ -1,5 +1,7 @@
 create database if not exists datastore;
 
+use datastore;
+
 CREATE TABLE if not exists `photo` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
     `filename` text,
