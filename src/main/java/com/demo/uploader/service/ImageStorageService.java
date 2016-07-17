@@ -28,7 +28,6 @@ public class ImageStorageService {
   private final Logger LOG = LoggerFactory.getLogger(getClass());
   private final DBI jdbi;
   private final ProcessedPhotoDao processedPhotoDao;
-  private boolean healthStatus = true;
   private Timer timer = new Timer("ImageStorageService", true);
   public static final int IMAGE_STORAGE_RUN_INTERVAL = 1000*60;
   public static final int INITIAL_DELAY = 0;
@@ -84,10 +83,6 @@ public class ImageStorageService {
 
   public String getName() {
     return NAME;
-  }
-
-  public boolean isHealthy() {
-    return healthStatus;
   }
 
 }
